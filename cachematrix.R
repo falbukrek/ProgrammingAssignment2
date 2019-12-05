@@ -57,7 +57,7 @@ cacheSolve <- function(x, ...) {
         
         # we don't have an inverse already computed, so let's compute it.
         m <- x$get()
-        inverse <- solve(m)
+        inverse <- solve(m, ...)
 
         # cache the result so we can reuse in the future        
         x$setInverse(inverse)
