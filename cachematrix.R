@@ -1,7 +1,7 @@
 ## These set of functions help compute and cache the inverse of a square matrix
 
 
-## The makeCacheMatric function manages the cached storage of the original matrix and its companion inverse.
+## The makeCacheMatrix function manages the cached storage of the original matrix and its companion inverse.
 ## It returns a list of functions that can be called to get/set the data it tracks.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
     }
     
     
-    # setter function to track the inverse of the matric
+    # setter function to track the inverse of the matrix
     setInverse <- function(newInverse) {
         inverse <<- newInverse        
     }
